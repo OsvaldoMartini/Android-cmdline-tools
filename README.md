@@ -53,7 +53,9 @@ sdkmanager "platform-tools" "platforms;android-33" "emulator" "system-images;and
 
 ---
 
-### Accept All Licenses
+## 📌 Accept All SDK Licenses
+Run the following command to accept all licenses:
+
 ```bash
 sdkmanager --licenses
 ```
