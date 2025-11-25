@@ -31,6 +31,66 @@ This guide explains how to install the Android command line tools, set up enviro
 
 ---
 
+Here is a clean, professional README snippet matching the style of your existing API-level section — but focused on **Build Tools**, which is what Appium needs for `apksigner.jar`, `zipalign`, etc.
+
+---
+
+## 📌 Android Build Tools Setup
+
+Android **Build-Tools** are required by Appium to sign and verify the `uiautomator2-server` APKs (`apksigner.jar`, `zipalign`, etc.).
+Install the version that matches your target API level.
+
+### ✅ Build-Tools for Android 15 (Preview) – API 35
+
+```bash
+sdkmanager "build-tools;35.0.0"
+```
+
+### ✅ Build-Tools for Android 14 – API 34
+
+```bash
+sdkmanager "build-tools;34.0.0"
+```
+
+### ✅ Build-Tools for Android 13 – API 33
+
+```bash
+sdkmanager "build-tools;33.0.2"
+```
+
+### 📂 After Installation
+
+The Build Tools will be placed under:
+
+```bash
+<ANDROID_HOME>/build-tools/<version>/
+```
+
+Inside this folder you will find:
+
+* `apksigner.bat`
+* `lib/apksigner.jar`
+* `zipalign.exe`
+* `d8`, `aapt2`, etc.
+
+These tools must be available for Appium to create Android sessions.
+
+---
+
+### 🔧 Add Build-Tools to PATH
+
+Ensure the following is added to your system PATH:
+
+```bash
+%ANDROID_HOME%\build-tools\<version>
+```
+
+Example:
+
+```bash
+C:\Android\build-tools\34.0.0
+```
+
 ## 📌 API Level Setup
 
 ### Android 15 (Preview) – API 35
