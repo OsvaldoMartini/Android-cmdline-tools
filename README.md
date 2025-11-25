@@ -31,10 +31,6 @@ This guide explains how to install the Android command line tools, set up enviro
 
 ---
 
-Here is a clean, professional README snippet matching the style of your existing API-level section — but focused on **Build Tools**, which is what Appium needs for `apksigner.jar`, `zipalign`, etc.
-
----
-
 ## 📌 Android Build Tools Setup
 
 Android **Build-Tools** are required by Appium to sign and verify the `uiautomator2-server` APKs (`apksigner.jar`, `zipalign`, etc.).
